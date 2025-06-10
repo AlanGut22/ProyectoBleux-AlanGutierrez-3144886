@@ -54,10 +54,7 @@ nav .btn-nav {
 
 .producto {
 	background-color: #2E2550;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
+	align-content: center;
 	height: 100vh;
 	width: 50%;
 	padding-left: 13%;
@@ -77,13 +74,17 @@ nav .btn-nav {
 }
 
 .producto .botones {
-	padding: 3% 1.1%;
+	padding: 1%;
 	border: 2px solid #575071;
-	border-radius: 5px;
+	width: fit-content;
+	border-radius: 7px;
 }
 
-.botones .btn-1, .btn-2 {
+.botones .btn-1,
+.btn-2 {
 	text-decoration: none;
+	display: inline-block;
+	box-sizing: border-box;
 	border-radius: 5px;
 	padding: 0.8rem 1.8rem;
 }
@@ -92,14 +93,20 @@ nav .btn-nav {
 	border: 2px solid white;
 	margin-right: 0.3rem;
 	background-color: white;
-	color: #F42990;
-	font-weight: 600;
+	font-weight: 700;
+}
+
+.btn-1 span {
+	background-image: linear-gradient(90deg, #EB66AB, #F41586);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .btn-2 {
 	border: 2px solid white;
 	color: white;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .img-cel {
@@ -112,7 +119,7 @@ nav .btn-nav {
 	background-size: cover;
 }
 
-/* Sección de funcionalidades */
+/* Sección sobre las funcionalidades */
 
 .fonctionnalites {
 	margin: 5%;
@@ -154,11 +161,13 @@ nav .btn-nav {
 	font-weight: 340;
 	margin-bottom: 2rem;
 	color: #e04193;
+	text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
 }
 
 .alpha .text {
 	width: 93%;
 	line-height: 1.5;
+	color: #414141;
 	font-size: 1.3rem;
 	margin: 1rem 0;
 }
@@ -172,6 +181,7 @@ nav .btn-nav {
 .alpha ul {
 	list-style: none;
 	font-size: 1.3rem;
+	color: #414141;
 }
 
 .alpha i {
@@ -179,7 +189,7 @@ nav .btn-nav {
 	margin-right: 1%;
 }
 
-/* Sección de planes y precios */
+/* Sección sobre planes y precios */
 
 .planes {
 	background-color: #1E172F;
@@ -193,7 +203,7 @@ nav .btn-nav {
 }
 
 .planes .info {
-	color: #BCBBC1;
+	color: #c9c8cf;
 	width: 50%;
 	margin: 2% auto;
 	text-align: center;
@@ -221,7 +231,7 @@ nav .btn-nav {
 	text-align: center;
 }
 
-.tarjetas .titulo, .titulo-lite {
+.tarjetas .titulo {
 	font-size: 1.2rem;
 	margin-bottom: 5%;
 }
@@ -243,14 +253,12 @@ nav .btn-nav {
 .list ul {
 	list-style: none;
 	padding: 1.5rem 2rem;
-	position: relative;
 }
 
 .list li {
 	position: relative;
 	line-height: 1.8;
 	text-align: center;
-	/* centra el texto */
 }
 
 .list li i {
@@ -269,29 +277,47 @@ nav .btn-nav {
 	text-align: center;
 }
 
-.tarjetas .final, .final-lite {
+.tarjetas .final {
 	background-color: #F5F5F5;
 }
 
-.tarjetas .final, .final-lite {
-	padding: 1.3rem;
+.tarjetas .final {
+	padding: 1rem;
 	text-align: center;
 }
 
 .final a {
 	background-color: #2E2550;
 	color: white;
-	padding: 0.6rem 1.5rem;
+	padding: 0.6rem 1.4rem;
 	text-decoration: none;
-	border-radius: 4px;
+	border-radius: 5px;
 	text-align: center;
 }
 
 .final-lite a {
 	background: linear-gradient(90deg, #EB66AB, #F41586);
-	color: white;
-	padding: 0.6rem 1.5rem;
-	text-decoration: none;
-	border-radius: 5px;
-	text-align: center;
+}
+
+/* Pie de página */
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2rem;
+	color: #3F3F3F;
+}
+
+.footer-primer {
+	font-size: 1.1rem;
+}
+
+.footer-primer span {
+	color: #F41486;
+}
+
+.footer-final i {
+	padding: 0 0.4rem;
+	font-size: 1.3rem;
 }
