@@ -63,7 +63,6 @@ nav .btn-nav {
 .producto h1 {
 	font-size: 8rem;
 	color: #ffffff;
-	text-align: left;
 }
 
 .producto p {
@@ -135,7 +134,6 @@ nav .btn-nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 6rem;
 	padding: 4rem 2rem;
 	margin: 0 auto;
 }
@@ -147,8 +145,6 @@ nav .btn-nav {
 .img-laptop img {
 	width: 80%;
 	height: auto;
-	object-fit: contain;
-	display: block;
 	margin: 0 auto;
 }
 
@@ -227,13 +223,13 @@ nav .btn-nav {
 }
 
 .tarjetas .cabeza {
-	margin: 2% 0;
+	margin: 5% 0;
 	text-align: center;
 }
 
 .tarjetas .titulo {
+	color: #282240;
 	font-size: 1.2rem;
-	margin-bottom: 5%;
 }
 
 .tarjetas .titulo-lite {
@@ -242,6 +238,7 @@ nav .btn-nav {
 
 .tarjetas .precio {
 	font-size: 2rem;
+	text-align: center;
 	padding: 0.5rem;
 	background-color: #F5F5F5;
 }
@@ -252,7 +249,7 @@ nav .btn-nav {
 
 .list ul {
 	list-style: none;
-	padding: 1.5rem 2rem;
+	padding: 1rem 2rem;
 }
 
 .list li {
@@ -263,8 +260,9 @@ nav .btn-nav {
 
 .list li i {
 	position: absolute;
+	line-height: 1.8;
 	left: 0;
-	color: #000000;
+	color: #282240;
 }
 
 .list li .icon-destacado {
