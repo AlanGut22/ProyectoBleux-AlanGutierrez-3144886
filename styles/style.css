@@ -255,21 +255,25 @@ nav .btn-nav {
 }
 
 .list li {
-	position: relative;
+	display: flex;
+	align-items: center;
 	line-height: 1.8;
-	text-align: center;
 }
 
 .list li i {
-	position: absolute;
-	line-height: 1.8;
-	left: 0;
+	text-align: left;
 	color: #282240;
+}
+
+.list li span {
+	margin: 0 auto;
+	text-align: center;
 }
 
 .list li .icon-destacado {
 	color: #F41486;
 }
+
 
 .tarjetas .text {
 	width: 74%;
@@ -279,9 +283,6 @@ nav .btn-nav {
 
 .tarjetas .final {
 	background-color: #F5F5F5;
-}
-
-.tarjetas .final {
 	padding: 1rem;
 	text-align: center;
 }
